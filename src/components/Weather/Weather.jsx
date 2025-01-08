@@ -9,6 +9,7 @@ const Weather = ({temperature,state}) => {
   return (
     <Grid container item direction={'row'} justifyItems={"center"} alignItems={"center"} spacing={1}>
        <IconContext.Provider value={{size:"5em"}} >
+                 
                  <IconState state={state}></IconState>
                  </IconContext.Provider>
       <Typography variant="h2" display="inline">{temperature}</Typography> 

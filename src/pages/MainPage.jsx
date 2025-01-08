@@ -6,15 +6,19 @@ import CityList from './../components/CityList'
 
 const cities = [
   {
-      city : "Grand Bourg",
-      country : "Argentina"
+      city : "Buenos Aires",
+      country : "Argentina",
+      countryCode : "AR"
   },{
-      city : "Polvorines",
-      country : "Argentina"
+      city : "Bogota",
+      country : "Colombia",
+      countryCode : "CO"
+
   },
   {
-      city : "San Miguel",
-      country : "Argentina"
+      city : "Madrid",
+      country : "España",
+      countryCode : "ES"
   }
 ]
 
@@ -27,7 +31,6 @@ const MainPage = props => {
   
   return (
     <div>
-        mainPage
         <CityList cities={cities} onClickCity={onClickHandler}> 
             <h3>Lista de ciudades</h3>
            </CityList>
